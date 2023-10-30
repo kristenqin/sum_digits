@@ -1,6 +1,6 @@
 package main;
 
-public class input_validator {
+public class InputValidator {
     public static boolean validate(String input) {
         if (input == null || input.isEmpty()) {
             return false;
@@ -13,10 +13,6 @@ public class input_validator {
         }
 
         int number = Integer.parseInt(input);
-        if (number < 0 || number > 1000) {
-            return false;
-        }
-
-        return true;
+        return number >= 0 && number <= 1000;
     }
 }

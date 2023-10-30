@@ -1,6 +1,6 @@
 package main;
-import main.input_validator;
-public class sum_digits {
+
+public class SumDigits {
     //- 输入参数解析
     //- 逻辑实现
     //- 输出打印
@@ -40,7 +40,7 @@ public class sum_digits {
         String input = args[0];
 
         // 调用工具类校验输入
-        if (!input_validator.validate(input)) {
+        if (!InputValidator.validate(input)) {
             System.out.println("输入不合法");
             return;
         }
